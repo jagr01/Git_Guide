@@ -7,3 +7,13 @@ editor: visual
 This is an example for demonstration purposes.
 
 This is a small change.
+
+## A Simple Plot using R's Default Cars Dataset
+
+```{r}
+data(cars)
+plot(cars$speed, cars$dist,
+     main = "Stopping Distance Against Speed",
+     xlab = "Speed (mph)",
+     ylab = "Stopping Distance (ft)")
+```
